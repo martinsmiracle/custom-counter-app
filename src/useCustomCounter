@@ -1,0 +1,27 @@
+import {useState, useEffect} from 'react'
+
+
+const useCustomCounter = (initialValue  = 0) => {
+   const [count, setCount] = useState(initialValue);
+
+
+    const increment = () => {
+        setCount(count + 1)
+    };
+
+    const decrement = () => {
+        setCount(count - 1)
+    };
+
+    const reset = () => {
+        setCount(initialValue)
+    };
+
+    const setValue = (value) => {
+        setCount((count) => count = Math.floor((Math.random() * 100)+1))
+    };
+
+    return {count, increment, decrement, reset, setValue };
+}
+
+export default useCustomCounter;
