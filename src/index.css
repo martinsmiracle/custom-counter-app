@@ -14,14 +14,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
- a {
+ .nav{
 font-size: 20px;
   font-weight: 500;
   color: rgba(135, 135, 214, 0.74);
-  text-decoration: inherit;
+  text-decoration:none;
+  margin-left: 50px;
+  margin-right: 50px;
   }
 
-a:hover {
+.nav:hover {
   color: black;
 } 
 
