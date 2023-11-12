@@ -5,15 +5,15 @@ function Nav(){
         <>
         <div className='navbar'>
             <div className='home'>
-                <Link to="/">Home</Link>
+                <Link className="nav" to="/">Home</Link>
             </div>
 
             <div className='error'>
-                <Link to="/ErrorBoundaryTest">Error</Link>
+                <Link className="nav" to="/ErrorBoundaryTest">Error</Link>
             </div>
 
             <div className='notfound'>
-                <Link to="/NotFound">404</Link>
+                <Link className="nav" to="/NotFound">404</Link>
             </div>
         </div>
         </>
